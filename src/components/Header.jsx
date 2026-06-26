@@ -2,11 +2,11 @@ import React from 'react';
 import { Search, Heart, ShoppingBag, User, ChevronDown } from 'lucide-react';
 import logo from '../assets/logo.svg';
 
-export default function Header({ 
-  cartCount, 
-  wishlistCount, 
-  onCartToggle, 
-  searchQuery, 
+export default function Header({
+  cartCount,
+  wishlistCount,
+  onCartToggle,
+  searchQuery,
   onSearchChange,
   categories,
   activeCategory,
@@ -16,7 +16,7 @@ export default function Header({
     <header className="main-header">
       {/* Announcement Bar */}
       <div className="announcement-bar">
-        FREE SHIPPING ON ORDERS OVER $50 • USE CODE: HOUSEGLOW FOR 10% OFF
+        FREE SHIPPING ON ORDERS OVER 1500 • USE CODE: HOUSEGLOW FOR 10% OFF
       </div>
 
       {/* Main Bar */}
@@ -29,9 +29,9 @@ export default function Header({
         {/* Search */}
         <div className="search-container">
           <Search size={18} className="text-slate-light" />
-          <input 
-            type="text" 
-            placeholder="Search beauty products..." 
+          <input
+            type="text"
+            placeholder="Search beauty products..."
             className="search-input"
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
@@ -43,12 +43,12 @@ export default function Header({
           <button className="action-btn" aria-label="Profile">
             <User size={20} />
           </button>
-          
+
           <button className="action-btn" aria-label="Wishlist">
             <Heart size={20} />
             {wishlistCount > 0 && <span className="badge">{wishlistCount}</span>}
           </button>
-          
+
           <button className="action-btn" onClick={onCartToggle} aria-label="Cart">
             <ShoppingBag size={20} />
             {cartCount > 0 && <span className="badge">{cartCount}</span>}
@@ -61,7 +61,7 @@ export default function Header({
         <ul className="nav-links">
           {categories.map((cat) => (
             <li key={cat}>
-              <button 
+              <button
                 className={`nav-link ${activeCategory === cat ? 'active-link' : ''}`}
                 style={{
                   fontWeight: 600,
