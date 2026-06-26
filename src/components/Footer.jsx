@@ -50,7 +50,7 @@ export default function Footer({ onCategoryChange }) {
         <div>
           <h4 className="footer-title">Contact Us</h4>
           <ul className="footer-links" style={{ color: '#94a3b8' }}>
-            <li>Email: houseofgirls@gmail.com</li>
+            <li>Email: support@houseofgirls.com</li>
             <li>Phone: +91 1111111111</li>
             <li>Address: Mumbai, Maharashtra, India</li>
           </ul>
@@ -58,8 +58,8 @@ export default function Footer({ onCategoryChange }) {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} HouseOf Girls Inc. All rights reserved.</p>
-        <p>Created with Love by Antigravity AI for premium web aesthetics.</p>
+        <p>&copy; {new Date().getFullYear()} HouseOf Girls. All rights reserved.</p>
+        {/* <p>Created with Love by Kshitij Bhise for premium web aesthetics.</p> */}
       </div>
     </footer>
   );
