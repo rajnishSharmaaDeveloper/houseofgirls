@@ -51,8 +51,8 @@ export default function Footer({ onCategoryChange }) {
           <h4 className="footer-title">Contact Us</h4>
           <ul className="footer-links" style={{ color: '#94a3b8' }}>
             <li>Email: support@houseofgirls.com</li>
-            <li>Phone: +1 (800) 555-GLOW</li>
-            <li>Address: 456 Beauty Avenue, New York, NY</li>
+            <li>Phone: +91 1111111111</li>
+            <li>Address: Mumbai, Maharashtra, India</li>
           </ul>
         </div>
       </div>
