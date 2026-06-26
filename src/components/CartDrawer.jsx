@@ -73,7 +73,7 @@ export default function CartDrawer({
                     </div>
 
                     <span className="cart-item-price">
-                      ${(item.price * item.quantity).toFixed(2)}
+                      ₹{(item.price * item.quantity).toFixed(2)}
                     </span>
                   </div>
                   
@@ -96,7 +96,7 @@ export default function CartDrawer({
           <div className="cart-footer">
             <div className="cart-summary-row">
               <span>Subtotal:</span>
-              <span className="cart-subtotal">${subtotal.toFixed(2)}</span>
+              <span className="cart-subtotal">₹{subtotal.toFixed(2)}</span>
             </div>
             <p style={{ fontSize: '11px', color: 'var(--slate-light)', marginBottom: '16px' }}>
               Shipping and taxes calculated at checkout. Free shipping active.

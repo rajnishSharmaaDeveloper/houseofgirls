@@ -61,11 +61,11 @@ export default function ProductModal({
           {/* Price */}
           <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', marginBottom: '16px' }}>
             <span style={{ fontSize: '24px', fontWeight: 800, color: 'var(--primary-brand)' }}>
-              ${product.price.toFixed(2)}
+              ₹{product.price.toFixed(2)}
             </span>
             {product.originalPrice && (
               <span style={{ fontSize: '16px', color: 'var(--slate-light)', textDecoration: 'line-through' }}>
-                ${product.originalPrice.toFixed(2)}
+                ₹{product.originalPrice.toFixed(2)}
               </span>
             )}
           </div>

@@ -89,11 +89,11 @@ export default function FeaturedDetail({ product, onAddToCart, wishlist, onToggl
 
           <div style={{ display: 'flex', alignItems: 'baseline', gap: '12px', marginBottom: '20px' }}>
             <span style={{ fontSize: '28px', fontWeight: 800, color: 'var(--primary-brand)' }}>
-              ${product.price.toFixed(2)}
+              ₹{product.price.toFixed(2)}
             </span>
             {product.originalPrice && (
               <span style={{ fontSize: '18px', color: 'var(--slate-light)', textDecoration: 'line-through' }}>
-                ${product.originalPrice.toFixed(2)}
+                ₹{product.originalPrice.toFixed(2)}
               </span>
             )}
           </div>

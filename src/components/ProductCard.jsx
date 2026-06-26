@@ -73,9 +73,9 @@ export default function ProductCard({
         {/* Price & Add to Cart */}
         <div className="product-price-row">
           <div className="price-wrapper">
-            <span className="current-price">${product.price.toFixed(2)}</span>
+            <span className="current-price">₹{product.price.toFixed(2)}</span>
             {product.originalPrice && (
-              <span className="original-price">${product.originalPrice.toFixed(2)}</span>
+              <span className="original-price">₹{product.originalPrice.toFixed(2)}</span>
             )}
           </div>
           
