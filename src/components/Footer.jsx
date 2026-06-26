@@ -50,7 +50,7 @@ export default function Footer({ onCategoryChange }) {
         <div>
           <h4 className="footer-title">Contact Us</h4>
           <ul className="footer-links" style={{ color: '#94a3b8' }}>
-            <li>Email: support@houseofgirls.com</li>
+            <li>Email: houseofgirls@gmail.com</li>
             <li>Phone: +91 1111111111</li>
             <li>Address: Mumbai, Maharashtra, India</li>
           </ul>
